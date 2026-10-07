@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="ws_file_workspace">文件工作区</string>
+    <string name="ws_workspace_menu">工作区菜单</string>
+    <string name="ws_archive_pane">RPF 资源包</string>
+    <string name="ws_storage_pane">设备文件</string>
+    <string name="ws_single_pane">只显示当前文件栏</string>
+    <string name="ws_dual_pane">显示双文件栏</string>
+    <string name="ws_search_archive">搜索当前目录及子目录…</string>
+    <string name="ws_search_storage">搜索当前目录及子目录…</string>
+    <string name="ws_sort_filter">排序与筛选</string>
+    <string name="ws_clear_selection">清除选择</string>
+    <string name="ws_selected_count">已选 %1$d 项</string>
+    <string name="ws_select_all">全选</string>
+    <string name="ws_invert_selection">反选</string>
+    <string name="ws_select_files">多选文件</string>
+    <string name="ws_parent_folder">上级目录</string>
+    <string name="ws_no_storage">内部存储</string>
+    <string name="ws_connect_storage">内部存储</string>
+    <string name="ws_storage_access_hint">允许文件访问后，即可浏览内部存储；也可以只选择一个目录。</string>
+    <string name="ws_choose_folder">选择目录</string>
+    <string name="ws_choose_storage">选择其他目录…</string>
+    <string name="ws_refresh">刷新</string>
+    <string name="ws_selection_hint">长按多选 · 点击栏标题切换工具</string>
+    <string name="ws_export_target">RPF → 设备目录：%1$s</string>
+    <string name="ws_import_target">设备文件 → RPF：%1$s</string>
+    <string name="ws_export_to_storage">导出到设备 →</string>
+    <string name="ws_import_to_archive">导入到 RPF</string>
+    <string name="ws_replace_in_archive">同名替换</string>
+    <string name="ws_open_file">打开</string>
+    <string name="ws_choose_export_folder">选择导出目录</string>
+    <string name="ws_overwrite_save">覆盖保存</string>
+    <string name="ws_replace_selected_file">替换左侧所选文件</string>
+    <string name="ws_internal_storage">内部存储</string>
+    <string name="ws_access_internal_storage">访问内部存储</string>
+    <string name="ws_other_folder">选择其他目录</string>
+    <string name="ws_searching">正在搜索子目录…</string>
+    <string name="ws_search_skipped">有 %1$d 个目录未能搜索</string>
+    <string name="ws_archive_search_scope">包含子目录 · 嵌套 RPF 请打开后搜索</string>
+    <string name="ws_open_archive">打开 RPF</string>
+    <string name="ws_no_archive">尚未打开 RPF</string>
+    <string name="ws_open_archive_hint">打开一个 RPF，即可浏览、编辑和传入文件。</string>
+    <string name="ws_library">资源库</string>
+    <string name="ws_storage_tools_hint">打开文件或管理设备目录</string>
+</resources>

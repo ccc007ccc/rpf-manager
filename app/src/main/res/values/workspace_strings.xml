@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="ws_file_workspace">File workspace</string>
+    <string name="ws_workspace_menu">Workspace menu</string>
+    <string name="ws_archive_pane">RPF</string>
+    <string name="ws_storage_pane">Device files</string>
+    <string name="ws_single_pane">Show active pane only</string>
+    <string name="ws_dual_pane">Show both panes</string>
+    <string name="ws_search_archive">Search RPF and subfolders…</string>
+    <string name="ws_search_storage">Search folder and subfolders…</string>
+    <string name="ws_sort_filter">Sort and filter</string>
+    <string name="ws_clear_selection">Clear selection</string>
+    <string name="ws_selected_count">%1$d selected</string>
+    <string name="ws_select_all">Select all</string>
+    <string name="ws_invert_selection">Invert</string>
+    <string name="ws_select_files">Select files</string>
+    <string name="ws_parent_folder">Parent folder</string>
+    <string name="ws_no_storage">Internal storage</string>
+    <string name="ws_connect_storage">Internal storage</string>
+    <string name="ws_storage_access_hint">Allow file access to browse internal storage, or choose a specific folder below.</string>
+    <string name="ws_choose_folder">Choose folder</string>
+    <string name="ws_choose_storage">Choose another folder…</string>
+    <string name="ws_refresh">Refresh</string>
+    <string name="ws_selection_hint">Long-press to select · Tap a pane title to switch tools</string>
+    <string name="ws_export_target">RPF → Device: %1$s</string>
+    <string name="ws_import_target">Device → RPF: %1$s</string>
+    <string name="ws_export_to_storage">Export → device</string>
+    <string name="ws_import_to_archive">Import to RPF</string>
+    <string name="ws_replace_in_archive">Replace matching names</string>
+    <string name="ws_open_file">Open</string>
+    <string name="ws_choose_export_folder">Choose export folder</string>
+    <string name="ws_overwrite_save">Overwrite original</string>
+    <string name="ws_replace_selected_file">Replace selected RPF file</string>
+    <string name="ws_internal_storage">Internal storage</string>
+    <string name="ws_access_internal_storage">Access internal storage</string>
+    <string name="ws_other_folder">Choose another folder</string>
+    <string name="ws_searching">Searching subfolders…</string>
+    <string name="ws_search_skipped">%1$d folders could not be searched</string>
+    <string name="ws_archive_search_scope">Includes subfolders · Open nested RPFs to search inside them</string>
+    <string name="ws_open_archive">Open RPF</string>
+    <string name="ws_no_archive">No RPF open</string>
+    <string name="ws_open_archive_hint">Open an RPF to browse, edit and transfer its files.</string>
+    <string name="ws_library">Resource library</string>
+    <string name="ws_storage_tools_hint">Open files or manage device folders</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="workspace_working">正在处理文件…</string>
+    <string name="workspace_publishing">正在完成原包替换…</string>
+    <string name="internal_storage_not_granted">尚未开启存储访问权限，也可使用“选择其他目录”。</string>
+    <string name="search_skipped_title">未能搜索的目录</string>
+    <string name="search_skipped_body">Android 或存储提供方不允许读取以下目录，其他目录的搜索结果仍可使用。</string>
+    <string name="workspace_preparing">正在检查文件和同名冲突…</string>
+    <string name="workspace_picked_files">所选存储文件</string>
+    <string name="batch_import_title">导入到 RPF</string>
+    <string name="batch_replace_title">替换 RPF 中的同名文件</string>
+    <string name="batch_export_title">导出到存储</string>
+    <string name="batch_delete_title">删除所选项目？</string>
+    <string name="batch_source">来源：%1$s</string>
+    <string name="batch_destination">目标：%1$s</string>
+    <string name="batch_counts">%1$d 项 · %2$d 项新增 · %3$d 项同名</string>
+    <string name="batch_unmatched">将跳过 %1$d 项未匹配的内容。</string>
+    <string name="batch_recursive">包含所选目录及其内容。嵌套 RPF 文件按整包传输。</string>
+    <string name="batch_workspace_note">修改在保存前保留于工作区，本次批量操作可一次撤销。</string>
+    <string name="batch_storage_delete_note">将删除存储中的所选文件、目录及其全部内容，无法在此撤销。</string>
+    <string name="batch_delete_count">已选 %1$d 个文件或目录</string>
+    <string name="batch_conflict_title">遇到同名文件</string>
+    <string name="batch_skip">跳过已有文件</string>
+    <string name="batch_overwrite">替换已有文件</string>
+    <string name="batch_replace_note">按文件名和相对路径匹配 RPF 当前目录，仅替换已有文件。</string>
+    <string name="batch_export_replace_note">将覆盖存储中已有的文件，无法在此撤销。</string>
+    <string name="batch_start">开始执行</string>
+    <string name="batch_result_title">操作结果</string>
+    <string name="batch_result_cancelled">操作已停止</string>
+    <string name="batch_result_counts">已完成：%1$d\n已跳过：%2$d\n失败：%3$d</string>
+    <string name="batch_cancelled_note">已完成的项目已保留，其余项目尚未处理。</string>
+    <string name="batch_more_paths">…另有 %1$d 项</string>
+    <string name="batch_done">完成</string>
+    <string name="batch_targeted_title">替换所选 RPF 文件</string>
+    <string name="batch_targeted_note">保留 RPF 中文件的名称，用所选存储文件替换其内容。</string>
+    <string name="batch_issues">%1$d 项无法处理，其他项目可继续执行。</string>
+    <string name="overwrite_title">覆盖保存原包？</string>
+    <string name="overwrite_body">将修改写回 %1$s？这会替换原包；如需保留另一份文件，请使用“另存为”。</string>
+    <string name="overwrite_confirm">覆盖保存</string>
+    <string name="overwrite_directory_title">选择原包所在目录</string>
+    <string name="overwrite_directory_body">请选择 %1$s 所在的目录，授权后即可覆盖保存，并在保存过程中保留恢复副本。</string>
+    <string name="overwrite_choose_directory">选择目录</string>
+</resources>

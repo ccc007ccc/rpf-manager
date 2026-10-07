@@ -1,0 +1,2 @@
+# Preserve the upstream Windows wrapper's CRLF without whitespace warnings.
+*.bat whitespace=cr-at-eol

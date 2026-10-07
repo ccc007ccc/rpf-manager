@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="library_open">Open RPF or resource</string>
+    <string name="library_open_hint">Browse archives, preview and replace files</string>
+    <string name="library_internal_storage">Browse internal storage</string>
+    <string name="library_no_recent">No recent files</string>
+    <string name="library_tools">Tools</string>
+    <string name="library_astc">ASTC tools</string>
+    <string name="library_extract">Extract RPF</string>
+    <string name="library_pack">Pack folder</string>
+    <string name="library_sample">Sample workspace</string>
+    <string name="library_sample_hint">Try models, textures, maps and audio</string>
+    <string name="library_remove_recent">Remove %1$s from recent files</string>
+</resources>

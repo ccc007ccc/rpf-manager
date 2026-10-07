@@ -1,0 +1,52 @@
+name: Build and test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      CARGO_BUILD_JOBS: "2"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check public source and history
+        run: python3 scripts/check-public.py
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: android-actions/setup-android@v3
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang libclang-dev cmake ninja-build python3-tk xvfb xauth
+          sdkmanager 'platforms;android-36' 'build-tools;34.0.0' 'ndk;27.3.13750724' 'cmake;3.22.1'
+          rustup toolchain install 1.97.1 --profile minimal --target aarch64-linux-android
+      - name: Test archive and shared resource processing
+        run: |
+          cargo test --locked --manifest-path rust-core/rpf-archive/Cargo.toml --lib --tests
+          cargo test --locked --manifest-path rust-core/jni-bridge/Cargo.toml --features desktop,fixtures --all-targets
+      - name: Rebuild the original demo
+        run: |
+          cargo run --locked --manifest-path rust-core/jni-bridge/Cargo.toml --features fixtures --example generate_demo -- /tmp/rpf-demo.rpf
+          cmp app/src/main/assets/studio.rpf /tmp/rpf-demo.rpf
+      - name: Build APK and run Android checks
+        run: ./scripts/build.sh assembleDebug testDebugUnitTest lintDebug
+      - name: Build and test Linux interface
+        run: |
+          ./linux/build.sh
+          xvfb-run -a python3 linux/test_gui.py --tool build/linux-astc/bin/rpf-tool
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rpf-manager-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error

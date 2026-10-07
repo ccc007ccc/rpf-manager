@@ -1,0 +1,4 @@
+# Android linker/NDK is supplied by scripts/build-rust.sh.
+# Host tests use the container's native compiler.
+[cache]
+auto-clean-frequency = "never"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="library_open">打开 RPF 或资源文件</string>
+    <string name="library_open_hint">浏览资源包，预览和替换文件</string>
+    <string name="library_internal_storage">浏览内部存储</string>
+    <string name="library_no_recent">暂无最近记录</string>
+    <string name="library_tools">工具</string>
+    <string name="library_astc">ASTC 工具</string>
+    <string name="library_extract">解包 RPF</string>
+    <string name="library_pack">打包目录</string>
+    <string name="library_sample">示例工作区</string>
+    <string name="library_sample_hint">体验模型、纹理、地图与音频预览</string>
+    <string name="library_remove_recent">从最近记录中移除 %1$s</string>
+</resources>

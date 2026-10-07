@@ -1,0 +1,49 @@
+[package]
+name = "rpf-jni"
+version = "0.2.0"
+edition = "2021"
+
+[lib]
+name = "rpf_jni"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+jni = "0.21"
+rpf-archive = { path = "../rpf-archive" }
+anyhow = "1.0"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+sha2 = "0.10"
+memmap2 = "0.9"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp", "bmp"] }
+flate2 = "1.0"
+astcenc-sys = { version = "=0.2.0", optional = true }
+texture2ddecoder = { version = "0.1", optional = true }
+clap = { version = "4.5", features = ["derive"], optional = true }
+rayon = { version = "1.10", optional = true }
+tempfile = { version = "3.10", optional = true }
+
+[dev-dependencies]
+tempfile = "3.10"
+astcenc-rs = "=0.2.0"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+
+[features]
+default = ["conversion"]
+fixtures = []
+conversion = ["dep:astcenc-sys", "dep:texture2ddecoder", "dep:rayon", "dep:tempfile"]
+desktop = ["conversion", "dep:clap"]
+
+[[bin]]
+name = "rpf-tool"
+path = "src/bin/rpf-tool.rs"
+required-features = ["desktop"]
+
+[[example]]
+name = "generate_demo"
+required-features = ["fixtures"]

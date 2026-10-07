@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="workspace_working">Applying file operations…</string>
+    <string name="workspace_publishing">Finishing archive replacement…</string>
+    <string name="internal_storage_not_granted">Storage access was not enabled. You can still choose a folder.</string>
+    <string name="search_skipped_title">Folders not searched</string>
+    <string name="search_skipped_body">Android or the storage provider did not allow these folders to be read. Results from other folders are available.</string>
+    <string name="workspace_preparing">Checking files and conflicts…</string>
+    <string name="workspace_picked_files">Selected storage files</string>
+    <string name="batch_import_title">Import into RPF</string>
+    <string name="batch_replace_title">Replace matching RPF files</string>
+    <string name="batch_export_title">Export to storage</string>
+    <string name="batch_delete_title">Delete selected items?</string>
+    <string name="batch_source">From: %1$s</string>
+    <string name="batch_destination">To: %1$s</string>
+    <string name="batch_counts">%1$d items · %2$d new · %3$d same name</string>
+    <string name="batch_unmatched">%1$d unmatched items will be skipped.</string>
+    <string name="batch_recursive">Includes selected folders and their contents. Nested RPF files are transferred as archives.</string>
+    <string name="batch_workspace_note">Changes stay in this workspace until saved. This batch can be undone in one step.</string>
+    <string name="batch_storage_delete_note">This removes the selected files and folders from storage, including all contents. It cannot be undone here.</string>
+    <string name="batch_delete_count">%1$d selected files or folders</string>
+    <string name="batch_conflict_title">When a file already exists</string>
+    <string name="batch_skip">Skip existing files</string>
+    <string name="batch_overwrite">Replace existing files</string>
+    <string name="batch_replace_note">Matches names and relative paths in the current RPF folder. Only existing files will be replaced.</string>
+    <string name="batch_export_replace_note">Existing storage files will be overwritten. This cannot be undone here.</string>
+    <string name="batch_start">Start</string>
+    <string name="batch_result_title">Operation results</string>
+    <string name="batch_result_cancelled">Operation stopped</string>
+    <string name="batch_result_counts">Completed: %1$d\nSkipped: %2$d\nFailed: %3$d</string>
+    <string name="batch_cancelled_note">Completed items have been kept. Remaining items were not processed.</string>
+    <string name="batch_more_paths">…and %1$d more</string>
+    <string name="batch_done">Done</string>
+    <string name="batch_targeted_title">Replace selected RPF file</string>
+    <string name="batch_targeted_note">The selected RPF file keeps its name. Its contents will be replaced with the selected storage file.</string>
+    <string name="batch_issues">%1$d items cannot be processed; other items can continue.</string>
+    <string name="overwrite_title">Overwrite the original archive?</string>
+    <string name="overwrite_body">Save changes back to %1$s? This replaces the original archive. Use Save as to keep a separate copy.</string>
+    <string name="overwrite_confirm">Overwrite and save</string>
+    <string name="overwrite_directory_title">Select the archive’s folder</string>
+    <string name="overwrite_directory_body">Select the folder containing %1$s so the app can replace the archive and keep a recovery copy while saving.</string>
+    <string name="overwrite_choose_directory">Select folder</string>
+</resources>

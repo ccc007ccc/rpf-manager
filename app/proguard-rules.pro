@@ -1,0 +1,3 @@
+-keepclasseswithmembernames class * { native <methods>; }
+-keep class com.gtav.rpfmanager.RpfCore { *; }
+-keep class com.gtav.rpfmanager.astc.AstcCore { *; }
